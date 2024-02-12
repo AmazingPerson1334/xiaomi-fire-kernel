@@ -28,6 +28,7 @@ config TOUCHSCREEN_GALAXYCORE_CHIPSET
 #hs03s_NM code for SR-AL5625-01-644 by fengzhigang at 20220414 end
 
 source "drivers/input/touchscreen/mediatek/novatek_touch/Kconfig"
+source "drivers/input/touchscreen/mediatek/xiaomi/Kconfig"
 source "drivers/input/touchscreen/mediatek/focaltech_touch_ax3565/Kconfig"
 source "drivers/input/touchscreen/mediatek/ilitek_touch/Kconfig"
 source "drivers/input/touchscreen/mediatek/hxchipset_ot8/Kconfig"
