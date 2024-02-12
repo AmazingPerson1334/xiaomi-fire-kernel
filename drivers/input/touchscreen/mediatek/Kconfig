@@ -29,6 +29,7 @@ config TOUCHSCREEN_GALAXYCORE_CHIPSET
 
 source "drivers/input/touchscreen/mediatek/novatek_touch/Kconfig"
 source "drivers/input/touchscreen/mediatek/xiaomi/Kconfig"
+source "drivers/input/touchscreen/mediatek/focaltech_touch/Kconfig"
 source "drivers/input/touchscreen/mediatek/focaltech_touch_ax3565/Kconfig"
 source "drivers/input/touchscreen/mediatek/ilitek_touch/Kconfig"
 source "drivers/input/touchscreen/mediatek/hxchipset_ot8/Kconfig"
@@ -45,6 +46,13 @@ config TOUCHSCREEN_JADARD_CHIPSET
 source "drivers/input/touchscreen/mediatek/ilitek_touch/Kconfig"
 source "drivers/input/touchscreen/mediatek/chipone/Kconfig"
 source "drivers/input/touchscreen/mediatek/jdchipset/Kconfig"
+
+config TOUCHSCREEN_MTK_FOCALTECH_FHD
+	bool "Focaltech FHD Touchscreen"
+	depends on I2C
+	help
+	  Say Y here if you have Focaltech touch panel.
+	  If unsure, say N.
 
 config TOUCHSCREEN_HIMAX_OT8
 	bool "HIMAX"
